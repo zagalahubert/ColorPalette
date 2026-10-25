@@ -4,7 +4,7 @@
 int main()
 {
     sf::Vector2u windowSize{ 1200, 800 };
-    std::string fontPath{ "fonts/arial.ttf" };
+    std::string fontPath{ "fonts/Roboto-Regular.ttf" };
 
     sf::RenderWindow window(sf::VideoMode(windowSize), "Different Color Palettes", sf::Style::Titlebar | sf::Style::Close);
 
