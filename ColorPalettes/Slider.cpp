@@ -24,8 +24,6 @@ Slider::Slider(sf::Vector2u sliderSize, sf::Vector2u sliderPosition)
     m_selectedLinePosition{ 0, 0 }, m_cursorPosition({ 100, static_cast<int>(m_sliderPosition.y + m_sliderSize.y / 2) }),
     m_selectedLineSize({ static_cast<float>(sliderSize.x), sliderSize.y * 0.035f}), m_selectedLine(m_selectedLineSize)
 {
-    // szerokosc znacznika na pewno taka jak slider size, wiec zawsze dla pierwszej kropki bierzemy za x sliderpos.x
-    // a dla drugiej za x sliderpos.x+slidersize.x, zmienia sie tylko y ale nie wieksze niz wymiary slidera
     m_padding = { m_sliderSize.x * 0.15f, m_sliderSize.y };
     m_slideAreaSize = { m_sliderSize.x - 2 * m_padding.x, m_sliderSize.y };
     m_slideAreaBorder.setSize({ m_slideAreaSize.x, m_slideAreaSize.y });

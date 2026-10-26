@@ -27,6 +27,7 @@ void ColorPaletteManager::onUpdate(float deltaTime)
 	m_deltaTime = deltaTime;
 	m_slider.onUpdate();
 
+	std::cout << m_sliderValue << std::endl;
 	m_hsl.setL(m_sliderValue);
 	m_hsv.setV(m_sliderValue);
 	m_cmy.setY(m_sliderValue);
@@ -84,7 +85,7 @@ void ColorPaletteManager::draw(sf::RenderTarget& target, sf::RenderStates states
 	target.draw(text);
 
 	text.setPosition({ 300, 700 });
-	text.setString("Y = " + std::to_string(m_cmy.getY()) + "%");
+	text.setString("Y = " + formater(m_cmy.getY(), 0) + "%");
 	target.draw(text);
 
 	// RGB palette
@@ -97,13 +98,13 @@ void ColorPaletteManager::draw(sf::RenderTarget& target, sf::RenderStates states
 	target.draw(text);
 
 	text.setPosition({ 650, 700 });
-	text.setString("B = " + std::to_string(m_rgb.getB()));
+	text.setString("B = " + formater(m_rgb.getB(), 0));
 	target.draw(text);
 
 	target.draw(m_slider);
 
 	text.setPosition({ 850, 360 });
-	text.setString("Time: " + formater(m_deltaTime) + "ms");
+	text.setString("Time: " + std::to_string(m_deltaTime) + "ms");
 	target.draw(text);
 }
 

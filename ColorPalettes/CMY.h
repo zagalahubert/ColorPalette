@@ -12,7 +12,7 @@ public:
 	void setY(float y);
 	void calculateCMYPaletteImage(sf::Vector2u size, sf::Color color = sf::Color::White);
 	sf::Vector3f CMYtoRGB(sf::Vector3f cmy);
-	inline const int getY() const { return m_Y * 100; }
+	inline const float getY() const { return m_Y * 100; }
 	inline const sf::Image& getImage() const { return m_cacheImage; }
 };
 
