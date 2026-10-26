@@ -1,6 +1,6 @@
-## Color Palettes
+# Color Palettes
 
-### Overview
+## Overview
 The programme provides the user with color palettes in **4 different color formats** allowing the user change their Color projection using **custom-made** slider.
 
 Programme supports:
@@ -11,7 +11,9 @@ Programme supports:
 
 Slider lets the user to change every palettes **last channel** and see the results in ***real-time***.
 
-### Setup
+![Programme window](projectImages/palettes.png)
+
+## Setup
 Before downloading make sure you have cmake installed. To run the programme, run commands:
 
 ```
@@ -23,7 +25,7 @@ cd build/Release
 .\ColorPalettes.exe    
 ```
 
-### Technologies
+## Technologies
 Technologies used:
 1. C++
 2. SFML

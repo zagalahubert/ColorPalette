@@ -27,7 +27,6 @@ void ColorPaletteManager::onUpdate(float deltaTime)
 	m_deltaTime = deltaTime;
 	m_slider.onUpdate();
 
-	std::cout << m_sliderValue << std::endl;
 	m_hsl.setL(m_sliderValue);
 	m_hsv.setV(m_sliderValue);
 	m_cmy.setY(m_sliderValue);
